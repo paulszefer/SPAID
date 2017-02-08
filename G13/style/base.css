@@ -1,0 +1,73 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+body {
+	width: 1366px;
+    
+	}
+	
+#logo {
+	position: absolute;
+	left: 5%;
+}
+
+#header {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background-color: #002624;
+}
+
+#navbar {
+	position: absolute;
+	width: 90%;
+	height: 50px;
+	left: 5%;
+	text-align: right;
+	background-color: #002624;	
+}
+
+#navbar li {
+	display: inline;
+	padding: 0;
+	list-style-type: none;
+}
+	
+.maincontent {
+	background-color: #EEE7E1;
+}
+	
+a.nav:link {
+	color: white;
+}	
+
+a.nav:visited {
+	color: white;
+}	
+
+a.nav:hover {
+	color: #EEE7E1;
+}
+
+a.nav:active {
+	color: #0B736C;
+}
+
+.nav {
+	text-decoration: none;
+	margin-left: 20px;
+	font-size: 2.2em;
+	font-family: navfont, Georgia, sans-serif;
+}
+
+@font-face {
+	font-family: 'navfont';
+	src: url('ITC Avant Garde Gothic LT Bold.otf');
+}
