@@ -1,4 +1,4 @@
-@echo off
+@echo offs
 git add *
 git status
 pause
