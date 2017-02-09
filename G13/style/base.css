@@ -47,6 +47,11 @@ background-color: #002624;
 	background-color: #FF0000;
 	height: 300px;
 }
+
+#slider img {
+	max-height: 100%;
+	width: 100%;
+}
 	
 .maincontent {
 	position: absolute;
