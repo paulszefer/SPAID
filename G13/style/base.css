@@ -60,15 +60,14 @@ background-color: #1C616F;
 	width: 90%;
 	margin: auto;
 	position: relative;
-	top: 60px;
+	top: 30px;
 	background-color: #A2B6B8;
 }
 
 #calendar{
 	width: 25%;
 	padding: 20px;
-	margin-top: 20px;
-	margin-left: 40px;
+	margin: auto;
 	background-color: #EEE7E1;
 	display: inline-block;
 	vertical-align: top;
@@ -76,8 +75,7 @@ background-color: #1C616F;
 	
 #maincontent {
 	width: 55%;
-	margin-top: 20px;
-	margin-left:40px;
+	margin: auto;
 	padding: 20px;
 	background-color: #EEE7E1;
 	display: inline-block;
