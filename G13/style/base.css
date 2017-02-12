@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -9,8 +9,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 
 body {	
+font-family: Calibri, Arial, sans-serif;
 width: 100%;
 background-color: #1C616F;
+}
+
+h2 {
+	font-family: headerfont, Calibri, Arial;
 }
 	
 #logo {
@@ -117,12 +122,6 @@ background-color: #1C616F;
 	margin-bottom: 45px;
 }
 
-.sitemap {
-	display: inline-block;
-	width: 100px;
-	vertical-align: top;
-}
-
 a.nav:link {
 	color: white;
 }	
@@ -146,7 +145,38 @@ a.nav:active {
 	font-family: navfont, Georgia, sans-serif;
 }
 
+.sitemap {
+	display: inline-block;
+	width: 100px;
+	vertical-align: top;
+}
+
+.sitemaplink {
+	text-decoration: none;
+}
+
+a.sitemaplink:link {
+	color: black;
+}	
+
+a.sitemaplink:visited {
+	color: black;
+}	
+
+a.sitemaplink:hover {
+	color: #1C616F;
+}
+
+a.sitemaplink:active {
+	color: white;
+}
+
 @font-face {
 	font-family: 'navfont';
 	src: url('ITC Avant Garde Gothic LT Bold.otf');
+}
+
+@font-face {
+	font-family: 'headerfont';
+	src: url('ITC Avant Garde Gothic Book Regular.otf');
 }
