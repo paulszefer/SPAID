@@ -51,18 +51,6 @@ h2 {
 	list-style-type: none;
 }
 	
-#slider {
-	top: 40px;
-	margin-left: 5%;
-	width: 90%;
-	height: 300px;
-}
-
-#slider img {
-	max-height: 100%;
-	width: 100%;
-}
-
 #body {
 	width: 1218px;
 	margin: auto;
@@ -73,39 +61,6 @@ h2 {
 	text-align: center;
 	border: solid black;
 	border-width: 1px 1px 0 1px;
-}
-	
-#maincontent {
-	width: 750px;
-	padding: 20px;
-	margin: 30px;
-	background-color: #EEE7E1;
-	display: inline-block;
-	vertical-align: top;
-	text-align: left;
-}
-
-#wrapper{
-	width: 360px;
-	display: inline-block;
-	vertical-align: top;
-}
-
-#calendar{
-	padding: 20px;
-	margin-top: 30px;
-	margin-right: 30px;
-	background-color: #EEE7E1;
-	text-align: left;
-}
-
-#feed{
-	padding: 20px;
-	margin-top: 30px;
-	margin-right: 30px;
-	margin-bottom: 30px;
-	background-color: #EEE7E1;
-	text-align: left;
 }
 
 #footer {
