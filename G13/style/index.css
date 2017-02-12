@@ -1,8 +1,10 @@
 #slider {
 	top: 40px;
-	margin-left: 5%;
-	width: 90%;
+	margin-left: auto;
+    margin-right: auto;
+	width: 1218px;
 	height: 300px;
+    border: solid 1px black;
 }
 
 #slider img {
