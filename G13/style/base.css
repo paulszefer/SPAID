@@ -16,6 +16,11 @@ background-color: #1C616F;
 
 h2 {
 	font-family: headerfont, Calibri, Arial;
+	margin-top: 5px;
+}
+
+p {
+	margin-bottom: 5px;
 }
 	
 #logo {
@@ -55,22 +60,22 @@ h2 {
 	width: 1218px;
 	margin: auto;
 	position: relative;
-	top: 30px;
+	top: 40px;
 	background-color: #A2B6B8;
-	height: 100%;
 	text-align: center;
 	border: solid black;
 	border-width: 1px 1px 0 1px;
+	padding-bottom: 1px;
 }
 
 #footer {
 	width: 1218px;
 	margin: auto;
 	height: 75px;
-	padding: 10px 0;
+	padding: 12px 0;
 	background-color: #D8D8DE;
 	position: relative;
-	top: 30px;
+	top: 40px;
 	text-align: center;
 	border: solid black;
 	border-width: 1px;
