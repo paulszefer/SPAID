@@ -25,6 +25,69 @@
 		</div>
 		
 		<div id="body">
+			<div id="maincontent">
+				<h1>Forum</h1>
+				
+				<div id="accountlogin">
+					<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
+						<div>
+							<label for="loginusername">Username: </label>
+							<input type="text" name="loginusername" id="loginusername" required="required">
+						</div>
+						<div>
+							<label for="loginpassword">Password: </label>
+							<input type="text" name="loginpassword" id="loginpassword" required="required">
+						</div>
+						<div>
+							<input id="loginsubmit" type="submit" value="Login">
+						</div>
+					</form>
+				</div>
+				
+				<div id="accountregister">
+					<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
+						<div>
+							<label for="registerusername">Username: </label>
+							<input type="text" name="registerusername" id="registerusername" required="required">
+						</div>
+						<div>
+							<label for="registerpassword">Password: </label>
+							<input type="text" name="registerpassword" id="registerpassword" required="required">
+						</div>
+						<div>
+							<input id="registersubmit" type="submit" value="Register">
+						</div>
+					</form>
+				</div>
+				
+				<div id="postthread">
+					<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
+						<div>
+							<label for="threadtitle">Thread Title: </label>
+							<input type="text" name="threadtitle" id="threadtitle" required="required">
+						</div>
+						<div>
+							<label for="threadcontent">Thread Content: </label>
+							<input type="text" name="threadcontent" id="threadcontent" required="required">
+						</div>
+						<div>
+							<input id="threadsubmit" type="submit" value="Post Thread">
+						</div>
+					</form>
+				</div>
+				
+				<div id="postreply">
+					<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
+						<div>
+							<label for="reply">Your reply: </label>
+							<input type="text" name="reply" id="reply" required="required">
+						</div>
+						<div>
+							<input id="replysubmit" type="submit" value="Post Reply">
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
 	
 		<div id="footer">

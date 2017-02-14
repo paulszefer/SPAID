@@ -1,0 +1,39 @@
+#maincontent {
+	width: 1116px;
+	background-color: #EEE7E1;
+	margin: 30px;
+	padding: 20px;
+	text-align: left;
+}
+
+#loginsubmit {
+	margin-left: 155px;
+	margin-bottom: 10px;
+}
+
+#registersubmit {
+	margin-left: 155px;
+	margin-bottom: 10px;
+}
+
+#threadsubmit {
+	margin-left: 155px;
+	margin-bottom: 10px;
+}
+
+#replysubmit {
+	margin-left: 155px;
+	margin-bottom: 10px;
+}
+
+label {
+	float: left;
+	width: 150px;
+	text-align: right;
+	margin-right: 5px;
+}
+
+input {
+	margin: 2px 0 2px 0;
+}
+
