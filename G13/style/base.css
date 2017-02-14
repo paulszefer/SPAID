@@ -71,7 +71,7 @@ p {
 #footer {
 	width: 1218px;
 	margin: auto;
-	height: 75px;
+	height: 65px;
 	padding: 12px 0;
 	background-color: #D8D8DE;
 	position: relative;
@@ -105,7 +105,32 @@ a.nav:active {
 	font-family: navfont, Georgia, sans-serif;
 }
 
-.sitemap {
+#sitemap1 {
+	display: inline-block;
+	width: 140px;
+	vertical-align: top;
+	margin-right: 25px;
+}
+
+#sitemap2 {
+	display: inline-block;
+	width: 100px;
+	vertical-align: top;
+}
+
+#sitemap3 {
+	display: inline-block;
+	width: 100px;
+	vertical-align: top;
+}
+
+#sitemap4 {
+	display: inline-block;
+	width: 100px;
+	vertical-align: top;
+}
+
+#sitemap5 {
 	display: inline-block;
 	width: 100px;
 	vertical-align: top;
