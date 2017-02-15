@@ -5,3 +5,8 @@
 	padding: 20px;
 	text-align: left;
 }
+
+img {
+	float: left;
+	margin-right: 10px;
+	}

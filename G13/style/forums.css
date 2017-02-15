@@ -1,3 +1,12 @@
+#forumhead {
+	display: inline-block;
+}
+
+#loginhead {
+	display: inline-block;
+	float: right;
+}
+
 #maincontent {
 	width: 1116px;
 	background-color: #EEE7E1;
@@ -7,33 +16,44 @@
 }
 
 #loginsubmit {
-	margin-left: 155px;
-	margin-bottom: 10px;
 }
 
 #registersubmit {
-	margin-left: 155px;
-	margin-bottom: 10px;
 }
 
-#threadsubmit {
-	margin-left: 155px;
-	margin-bottom: 10px;
+#accountlogin {
+	text-align: right;
 }
 
-#replysubmit {
-	margin-left: 155px;
-	margin-bottom: 10px;
+#forumblock {
+	margin: 10px 0 0 55px;
+	width:1000px;
 }
+
+#tableheader {
+	background-color: #A2B6B8;
+}
+
+.tablesubheader {
+	background-color: #1C616F;
+	color: white;
+	}
 
 label {
-	float: left;
-	width: 150px;
-	text-align: right;
-	margin-right: 5px;
 }
 
 input {
-	margin: 2px 0 2px 0;
+	margin: 2px;
+}
+
+table {
+	width: 1000px;
+	margin: 10px 0 0 0;
+}
+
+td {
+	padding: 5px;
+	border: solid black;
+	border-width: 1px;
 }
 

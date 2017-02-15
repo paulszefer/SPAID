@@ -26,72 +26,64 @@
 		
 		<div id="body">
 			<div id="maincontent">
-				<h1>Forum</h1>
+				<div id="forumhead">
+					<h1>Forum</h1>
+				</div>
+				
+				<div id="loginhead">
+					<h3>Logged in as PLACEHOLDER</h3>
+				</div>
 				
 				<div id="accountlogin">
 					<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
 						<div>
-							<label for="loginusername">Username: </label>
-							<input type="text" name="loginusername" id="loginusername" required="required">
+							<label for="username">Username: </label>
+							<input type="text" name="username" id="username" required="required">
 						</div>
 						<div>
-							<label for="loginpassword">Password: </label>
-							<input type="text" name="loginpassword" id="loginpassword" required="required">
+							<label for="password">Password: </label>
+							<input type="text" name="password" id="password" required="required">
 						</div>
 						<div>
 							<input id="loginsubmit" type="submit" value="Login">
-						</div>
-					</form>
-				</div>
-				
-				<div id="accountregister">
-					<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
-						<div>
-							<label for="registerusername">Username: </label>
-							<input type="text" name="registerusername" id="registerusername" required="required">
-						</div>
-						<div>
-							<label for="registerpassword">Password: </label>
-							<input type="text" name="registerpassword" id="registerpassword" required="required">
-						</div>
-						<div>
 							<input id="registersubmit" type="submit" value="Register">
 						</div>
 					</form>
 				</div>
 				
-				<div id="postthread">
-					<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
-						<div>
-							<label for="threadtitle">Thread Title: </label>
-							<input type="text" name="threadtitle" id="threadtitle" required="required">
-						</div>
-						<div>
-							<label for="threadcontent">Thread Content: </label>
-							<input type="text" name="threadcontent" id="threadcontent" required="required">
-						</div>
-						<div>
-							<input id="threadsubmit" type="submit" value="Post Thread">
-						</div>
-					</form>
-				</div>
-				
-				<div id="postreply">
-					<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
-						<div>
-							<label for="reply">Your reply: </label>
-							<input type="text" name="reply" id="reply" required="required">
-						</div>
-						<div>
-							<input id="replysubmit" type="submit" value="Post Reply">
-						</div>
-					</form>
+				<div id="forumblock">
+					<table>
+						<tr id="tableheader">
+							<td><h3>Forum</h3></td>
+							<td><h3>Search</h3></td>
+							<td><h3>FAQ</h3></td>
+							<td><h3>Members</h3></td>
+						</tr>
+						<tr class="tablesubheader">
+							<td colspan="4">CST Students Discussion</td>
+						</tr>
+						<tr>
+							<td colspan="4">Topic 1</td>
+						</tr>
+						<tr>
+							<td colspan="4">Topic 2</td>
+						</tr>
+						<tr>
+							<td colspan="4">Topic 3</td>
+						</tr>
+						<tr class="tablesubheader">
+							<td colspan="4">Non CST Personnel Discussion</td>
+						</tr>
+						<tr>
+							<td colspan="4">Topic 1</td>
+						<tr>
+					</table>
 				</div>
 			</div>
 		</div>
 	
 		<div id="footer">
-			<p>Copyright blah blah 2017 I hate HTML mostly</p><br>
+			<p>Copyright SPAID 2017</p><br>
 			<div id="sitemap1"><a class="sitemaplink" href="academics.html">Academics</a>&nbsp; <a class="sitemaplink" href="courses.html">(Courses)</a>
 			</div>
 			<div id="sitemap2"><a class="sitemaplink" href="resources.html">Resources</a>

@@ -1,3 +1,8 @@
+img {
+	float: right;
+	margin-left: 5px;
+}
+
 #slider {
 	top: 40px;
 	margin-left: auto;
