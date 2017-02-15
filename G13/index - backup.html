@@ -5,8 +5,6 @@
 		<title>SPAID - Index</title>
 		<link rel="stylesheet" type="text/css" href="style/base.css">
 		<link rel="stylesheet" type="text/css" href="style/index.css">
-	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
-	<script type="text/javascript" src="engine0/jquery.js"></script>
 	</head>
 	<body>
 		<div id="header">
@@ -22,23 +20,33 @@
 			</div>
 		</div>
 		
-		<div id="wowslider-container0">
-		<div class="ws_images"><ul>
-				<li><a href="www.bcit.ca" target="_blank"><img src="data0/images/bc1.jpg" alt="Students" title="Students" id="wows0_0"/></a></li>
-				<li><img src="data0/images/bc2.jpg" alt="Academics" title="Academics" id="wows0_1"/></li>
-				<li><a href="www.google.ca"><img src="data0/images/bc3.jpg" alt="BCIT" title="BCIT" id="wows0_2"/></a></li>
-				<li><img src="data0/images/logo.png" alt="About Us" title="About Us" id="wows0_3"/></li>
-			</ul></div>
-			<div class="ws_bullets"><div>
-				<a href="#" title="Students"><span>1</span></a>
-				<a href="#" title="Academics"><span>2</span></a>
-				<a href="#" title="BCIT"><span>3</span></a>
-				<a href="#" title="About Us"><span>4</span></a>
-			</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">http://wowslider.com/</a> by WOWSlider.com v8.7</div>
-		<div class="ws_shadow"></div>
-		</div>	
-		<script type="text/javascript" src="engine0/wowslider.js"></script>
-		<script type="text/javascript" src="engine0/script.js"></script>
+		<div id="slider">
+		
+			<img class="testslides w3-animate-fading" src="images/bc1.jpg">
+			<img class="testslides w3-animate-fading" src="images/bc2.jpg">
+			<img class="testslides w3-animate-fading" src="images/bc3.jpg">
+		
+		</div>
+		<div id="logo">
+			<a href="index.html"><img src="images/logo.png" alt="Logo" width="238" height="40"></a>
+		</div>
+		
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("testslides");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+				}
+				myIndex++;
+				if (myIndex > x.length) {myIndex = 1}    
+				x[myIndex-1].style.display = "block";  
+				setTimeout(carousel, 3000);    
+			}
+		</script>
 	
 		<div id="body">
 			<div id="maincontent">
