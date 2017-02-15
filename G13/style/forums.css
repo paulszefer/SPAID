@@ -34,10 +34,52 @@
 	background-color: #A2B6B8;
 }
 
+#row1 {
+	background-color: #A2B6B8;
+	border: solid black;
+	border-width: 1px 1px 1px 1px;
+	font-family: headerfont, Calibri, Arial;
+	font-size: 1.2em;
+}
+	
+#row2 {
+	background-color: #1C616F;
+	color: white;
+}
+
+#row3 {
+	background-color: white;
+}
+
+#row4 {
+	background-color: white;
+}
+
+#row5 {
+	background-color: white;
+}
+	
+#row6 {
+	background-color: #1C616F;
+	color: white;
+}
+
+#row7 {
+	background-color: white;
+}
+
 .tablesubheader {
 	background-color: #1C616F;
 	color: white;
-	}
+}
+	
+.row {
+	margin: 0;
+	width: 1000px;
+	padding: 5px;
+	border: solid black;
+	border-width: 0 1px 1px 1px;
+}
 
 label {
 }
