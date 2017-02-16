@@ -44,8 +44,12 @@
 	border-width: 1px;
 }
 
-#scrolllinks a {
+a {
 	text-decoration: none;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: blue;
 }
 
 #scrolllinks a:link {
