@@ -16,7 +16,7 @@
 
 #scrolllink1 {
 	width: 372px;
-	margin-left: 30px;
+	margin-left: 29px;
 	margin-right: 5px;
 	display: inline-block;
 	background-color: #1C616F;
@@ -25,7 +25,7 @@
 }
 
 #scrolllink2 {
-	width: 372px;
+	width: 373px;
 	margin-left: 5px;
 	margin-right: 5px;
 	display: inline-block;
@@ -37,7 +37,7 @@
 #scrolllink3 {
 	width: 372px;
 	margin-left: 5px;
-	margin-right: 30px;
+	margin-right: 32px;
 	display: inline-block;
 	background-color: #1C616F;
 	border: solid black;

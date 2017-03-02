@@ -44,16 +44,18 @@ p {
 #navbar {
 	position: fixed;
 	width: 90%;
-	height: 40px;
+	height: 30px;
 	left: 5%;
 	text-align: right;
 	background-color: #1C616F;
+	margin-top: 5px;
 }
 
 #navbar li {
 	display: inline;
 	padding: 0;
 	list-style-type: none;
+	margin-top: 5px;
 }
 	
 #body {
@@ -101,8 +103,8 @@ a.nav:active {
 .nav {
 	text-decoration: none;
 	margin-left: 20px;
-	font-size: 2em;
-	font-family: navfont, Georgia, sans-serif;
+	font-size: 1.5em;
+	font-family: headerfont, Georgia, sans-serif;
 }
 
 #sitemap1 {
