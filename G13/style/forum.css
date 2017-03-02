@@ -1,12 +1,10 @@
 #forumhead {
 	display: inline-block;
-	margin-left: 55px;
 }
 
 #loginhead {
 	display: inline-block;
 	float: right;
-	margin-right: 47px;
 }
 
 #maincontent {
@@ -16,14 +14,14 @@
 	padding: 20px;
 	text-align: left;
 }
+
 #accountlogin {
 	text-align: right;
-	margin-right: 47px;
 }
 
 #forumblock {
-	margin: 10px 0 0 55px;
-	width:1000px;
+	margin: 10px 0 0 0;
+	width: 1116px;
 }
 
 #row1 {
@@ -61,7 +59,6 @@
 }
 .row {
 	margin: 0;
-	width: 1000px;
 	padding: 5px;
 	border: solid black;
 	border-width: 0 1px 1px 1px;
