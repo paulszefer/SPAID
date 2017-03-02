@@ -41,6 +41,18 @@ p {
 	border-width: 0 0 1px 0;
 }
 
+@media (min-width: 1218px) and (max-width: 1600px) {
+	#navbar {
+		max-width: 1218px;
+	}
+}
+
+@media (min-width: 1600px) {
+	#navbar {
+		max-width: 1400px;
+	}
+}
+
 #navbar {
 	position: fixed;
 	width: 90%;
@@ -48,7 +60,7 @@ p {
 	left: 5%;
 	text-align: right;
 	background-color: #1C616F;
-	margin-top: 5px;
+	margin: 5px 0 0 0;
 }
 
 #navbar li {
