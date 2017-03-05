@@ -7,11 +7,10 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 	vertical-align: baseline;
 }
 
-
 body {	
-font-family: Calibri, Arial, sans-serif;
-width: 100%;
-background-color: #1C616F;
+    font-family: Calibri, Arial, sans-serif;
+    width: 100%;
+    background-color: #1C616F;
 }
 
 h2, h1, h3{
@@ -20,7 +19,7 @@ h2, h1, h3{
 }
 
 p {
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 }
 	
 #logo {
@@ -57,6 +56,47 @@ p {
 	list-style-type: none;
 	margin-top: 5px;
 }
+
+#navbarcollapsed {
+    display: none;
+    position: fixed;
+    right: 0;
+}
+
+#navbarmenu {
+    display: block;
+}
+
+.navcollapsed {
+    display: none;
+    background-color: #1C616F;
+    width: 150px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    border: solid black;
+    border-width: 0 0 1px 0;
+    text-align: right;
+}
+
+/* when screen < 1250px */
+@media only screen and (max-width: 1250px) {
+    #logo {
+        margin-left: 2%;
+    }
+    
+    #navbar {
+        width: 100%;
+    }
+    
+    #navbar li {
+        display: none;
+    }
+    
+    #navbarcollapsed {
+        display: inline;
+    }
+}
 	
 #body {
 	width: 1218px;
@@ -84,6 +124,13 @@ p {
 	margin-bottom: 45px;
 }
 
+.nav {
+	text-decoration: none;
+	margin-left: 20px;
+	font-size: 1.5em;
+	font-family: headerfont, Georgia, sans-serif;
+}
+
 a.nav:link {
 	color: white;
 }	
@@ -98,13 +145,6 @@ a.nav:hover {
 
 a.nav:active {
 	color: #A2B6B8;
-}
-
-.nav {
-	text-decoration: none;
-	margin-left: 20px;
-	font-size: 1.5em;
-	font-family: headerfont, Georgia, sans-serif;
 }
 
 #sitemap1 {
