@@ -17,7 +17,8 @@ logintab.onclick = function() {
         changeDisplay(loginform, "block");
         changeDisplay(regform, "none");
     } else {
-        changeBackgroundColor(regtab, selectedColor);
+        changeBackgroundColor(regtab, unselectedColor);
+        changeBackgroundColor(logintab, unselectedColor);
         changeDisplay(loginform, "none");
     }
     loginselected = !loginselected;
@@ -31,7 +32,8 @@ regtab.onclick = function() {
         changeDisplay(loginform, "none");
         changeDisplay(regform, "block");
     } else {
-        changeBackgroundColor(logintab, selectedColor);
+        changeBackgroundColor(logintab, unselectedColor);
+        changeBackgroundColor(regtab, unselectedColor);
         changeDisplay(regform, "none");
     }
     loginselected = false;
