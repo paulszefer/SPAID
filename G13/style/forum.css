@@ -1,10 +1,53 @@
 #forumhead {
-	display: inline-block;
+	display: inline-block
 }
 
 #loginhead {
 	display: inline-block;
 	float: right;
+}
+
+#account {
+    clear: both;
+    float: right;
+    border: solid 1px black;
+	background-color: #A2B6B8;
+    
+}
+
+#logintab {
+    border: solid black;
+    border-width: 0 0 1px 1px;
+}
+
+#registertab {
+    border: solid black;
+    border-width: 0 0 1px 0;
+}
+
+#loginform {
+    display: none;
+}
+
+#registerform {
+    display: none;
+}
+
+.accounttab {
+    width: 120px;
+    float: right;
+    text-align: center;
+    font-size: 1.1em;
+    display: inline-block;
+    user-select: none;
+}
+
+#accountform label {
+    float: left;
+}
+
+#accountform input {
+    clear: both;
 }
 
 #maincontent {
@@ -20,7 +63,7 @@
 }
 
 #forumblock {
-	margin: 10px 0 0 0;
+	margin: 20px 0 0 0;
 	width: 1116px;
 }
 
@@ -57,6 +100,7 @@
 #row7 {
 	background-color: white;
 }
+
 .row {
 	margin: 0;
 	padding: 5px;

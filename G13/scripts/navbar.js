@@ -9,11 +9,11 @@ var aboutus = document.getElementById("navbaraboutus");
 var col = document.getElementsByClassName("navcollapsed");
 
 navcol.onmouseover = function() {
-    changeDisplay(col, "block");
+    changeDisplayArray(col, "block");
 }
 
 navcol.onmouseout = function() {
-    changeDisplay(col, "none");
+    changeDisplayArray(col, "none");
     menu.style.display = "block";
 }
     
@@ -69,7 +69,7 @@ function changeBackgroundColor(obj, val) {
     obj.style.backgroundColor = val;
 }
 
-function changeDisplay(obj, val) {
+function changeDisplayArray(obj, val) {
     for (var i = 0; i < obj.length; i++) {
         obj[i].style.display = val;
     }

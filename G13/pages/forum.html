@@ -52,7 +52,42 @@
 				<div id="loginhead">
 					<h3>Logged in as PLACEHOLDER</h3>
 				</div>
-				
+                
+                <div id="account">
+                    <div id="logintab" class="accounttab">Login</div>
+                    <div id="registertab" class="accounttab">Register</div>
+                    <div id="accountform">
+                        <div id="loginform">
+                            <form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
+                                <div>
+                                    <label for="loginusername">Username:</label>
+                                    <input type="text" id="loginusername" name="loginusername" size="16">
+                                </div>
+                                <div>
+                                    <label for="loginpassword">Password:</label>
+                                    <input type="password" id="loginpassword" name="loginpassword" size="16">
+                                </div>
+                                <input type="submit" id="loginsubmit" value="Login">
+                            </form>
+                        </div>
+                        <div id="registerform">
+                            <form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
+                                <div>
+                                    <label for="registerusername">Username:</label>
+                                    <input type="text" id="registerusername" name="registerusername" size="16">
+                                </div>
+                                <div>
+                                    <label for="registerpassword">Password:</label>
+                                    <input type="password" id="registerpassword" name="registerpassword" size="16">
+                                </div>
+                                <input type="submit" id="registersubmit" value="Register">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                        
+				<!-- old form code
+                
 				<div id="accountlogin">
 					<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
 						<div>
@@ -69,6 +104,8 @@
 						</div>
 					</form>
 				</div>
+                
+                -->
 				
 				<div id="forumblock">
 					<div id="row1" class="row">
@@ -116,6 +153,7 @@
 			</div>
 		</div>
 		<script src="../scripts/navbar.js"></script>
+        <script src="../scripts/account.js"></script>
 		
 	</body>
 </html>
