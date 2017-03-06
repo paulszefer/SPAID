@@ -28,11 +28,35 @@
 #loginform {
     display: none;	
 	background-color: white;
+	text-align: right;
+	padding: 30px 0 5px 0;
+}
+
+#loginform label {
+	display: inline-block;
+	width: 80px;
+	text-align: right;
+}
+
+#loginform form {
+	padding-right: 5px;
 }
 
 #registerform {
-    display: none;
-	background-color: white;	
+    display: none;	
+	background-color: white;
+	text-align: right;
+	padding: 30px 0 5px 0;
+}
+
+#registerform label {
+	display: inline-block;
+	width: 80px;
+	text-align: right;
+}
+
+#registerform form {
+	padding-right: 5px;
 }
 
 .accounttab {
