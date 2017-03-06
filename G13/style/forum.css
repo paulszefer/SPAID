@@ -17,20 +17,22 @@
 
 #logintab {
     border: solid black;
-    border-width: 0 0 1px 1px;
+    border-width: 0 0 0 1px;
 }
 
 #registertab {
     border: solid black;
-    border-width: 0 0 1px 0;
+    border-width: 0 0 0 0;
 }
 
 #loginform {
-    display: none;
+    display: none;	
+	background-color: white;
 }
 
 #registerform {
     display: none;
+	background-color: white;	
 }
 
 .accounttab {
