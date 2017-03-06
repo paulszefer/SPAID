@@ -42,7 +42,6 @@
             </div>
 		</div>
 		
-		
 		<div id="body">
 			<div id="maincontent">
 				<div id="forumhead">
@@ -85,55 +84,28 @@
                         </div>
                     </div>
                 </div>
-                        
-				<!-- old form code
-                
-				<div id="accountlogin">
-					<form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
-						<div>
-							<label for="username">Username: </label>
-							<input type="text" name="username" id="username" required="required">
-						</div>
-						<div>
-							<label for="password">Password: </label>
-							<input type="password" name="password" id="password" required="required">
-						</div>
-						<div>
-							<input id="loginsubmit" type="submit" value="Login">
-							<input id="registersubmit" type="submit" value="Register">
-						</div>
-					</form>
-				</div>
-                
-                -->
 				
 				<div id="forumblock">
-					<div id="row1" class="row">
-						Forum &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Search &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FAQ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Members
+					<div id="row1" class="row rowtitle">
+						Forum
 					</div>
 					
-					<div id="row2" class="row">
-						CST Students Discussion
+					<div id="row2" class="row rowthread">
+                        <div class="threadtitle">Test Topic Title</div>
+                        <div class="threadtimestamp">Test Topic Timestamp</div>
+                        <div class="threadcontent">This is an interesting thread. It has a lot of content.</div>
 					</div>
 					
-					<div id="row3" class="row">
-						Topic 1
+					<div id="row3" class="row rowthread">
+                        <div class="threadtitle">Test Topic Title</div>
+                        <div class="threadtimestamp">Test Topic Timestamp</div>
+                        <div class="threadcontent">This is another interesting thread. It has a lot of content.</div>
 					</div>
 					
-					<div id="row4" class="row">
-						Topic 2
-					</div>
-					
-					<div id="row5" class="row">
-						Topic 3
-					</div>
-					
-					<div id="row6" class="row">
-						Non CST Personnel Discussion
-					</div>
-					
-					<div id="row7" class="row">
-						Topic 1
+					<div id="row4" class="row rowthread">
+                        <div class="threadtitle">Test Topic Title</div>
+                        <div class="threadtimestamp">Test Topic Timestamp</div>
+                        <div class="threadcontent">This is yet another interesting thread. It has a lot of content.</div>
 					</div>
 				</div>
 			</div>
@@ -152,8 +124,10 @@
 			<div id="sitemap5"><a class="sitemaplink" href="aboutus.html">About Us</a>
 			</div>
 		</div>
+        <script src="../scripts/jquery.js"></script>
 		<script src="../scripts/navbar.js"></script>
         <script src="../scripts/account.js"></script>
+        <script src="../scripts/thread.js"></script>
 		
 	</body>
 </html>

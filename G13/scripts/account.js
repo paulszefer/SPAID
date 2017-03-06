@@ -4,8 +4,8 @@ var regtab = document.getElementById("registertab");
 var loginform = document.getElementById("loginform");
 var regform = document.getElementById("registerform");
 
-var selectedColor = "#A2B6B8";
-var unselectedColor = "white";
+var selectedColor = "white";
+var unselectedColor = "#A2B6B8";
 
 var loginselected = false;
 var regselected = false;

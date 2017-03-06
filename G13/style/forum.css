@@ -47,7 +47,12 @@
 }
 
 #accountform input {
+    float: right;
+}
+
+#loginsubmit, #registersubmit {
     clear: both;
+    float: right;
 }
 
 #maincontent {
@@ -63,42 +68,8 @@
 }
 
 #forumblock {
-	margin: 20px 0 0 0;
+	margin: 50px 0 0 0;
 	width: 1116px;
-}
-
-#row1 {
-	background-color: #A2B6B8;
-	border: solid black;
-	border-width: 1px 1px 1px 1px;
-	font-family: headerfont, Calibri, Arial;
-	font-size: 1.2em;
-}
-	
-#row2 {
-	background-color: #1C616F;
-	color: white;
-}
-
-#row3 {
-	background-color: white;
-}
-
-#row4 {
-	background-color: white;
-}
-
-#row5 {
-	background-color: white;
-}
-	
-#row6 {
-	background-color: #1C616F;
-	color: white;
-}
-
-#row7 {
-	background-color: white;
 }
 
 .row {
@@ -106,6 +77,61 @@
 	padding: 5px;
 	border: solid black;
 	border-width: 0 1px 1px 1px;
+}
+
+.rowtitle {
+	background-color: #A2B6B8;
+	border: solid black;
+	border-width: 1px 1px 1px 1px;
+	font-family: headerfont, Calibri, Arial;
+	font-size: 1.2em;
+}
+
+.rowthread {
+    background-color: white;
+    color: black;
+}
+
+.threadtitle {
+    display: inline-block;
+}
+
+.threadtimestamp {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+.threadcontent {
+    display: none;
+}
+    
+#row1 {
+    
+}
+	
+#row2 {
+    
+}
+
+#row3 {
+    
+}
+
+#row4 {
+    
+}
+
+#row5 {
+    
+}
+	
+#row6 {
+    
+}
+
+#row7 {
+    
 }
 
 input {
