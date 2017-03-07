@@ -134,6 +134,10 @@
 .threadcontent {
     display: none;
 }
+
+.threadauthor {
+    display: none;
+}
     
 #row1 {
     
