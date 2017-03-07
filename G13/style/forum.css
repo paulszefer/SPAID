@@ -25,6 +25,10 @@
     border-width: 0 0 0 0;
 }
 
+#accountform {
+    background-color: white;
+}
+
 #loginform {
     display: none;	
 	background-color: white;
@@ -94,7 +98,7 @@
 }
 
 #forumblock {
-	margin: 50px 0 0 0;
+	margin: 80px 0 0 0;
 	width: 1116px;
 }
 
@@ -124,8 +128,7 @@
 
 .threadtimestamp {
     display: inline-block;
-    position: absolute;
-    right: 0;
+    float: right;
 }
 
 .threadcontent {
