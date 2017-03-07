@@ -6,6 +6,7 @@ $(".rowthread").click(
         $(".threadauthor").css("display", "none");
         
         if (!selected) {
+            $(this).css("background-color", "#FFFFFF");
             $(this).find(".threadcontent").css("display", "block");
             $(this).find(".threadauthor").css("display", "block");
             selected = !selected;
@@ -15,7 +16,11 @@ $(".rowthread").click(
 
 $(".rowthread").hover(
     function() {
-        $(this).css("background-color", "#AAFFAA");
+        var selected = ($(this).find(".threadcontent").css("display") == "block");
+        
+        if (!selected) {
+            $(this).css("background-color", "#AAFFAA");
+        }
     },
     function() {
         $(this).css("background-color", "#FFFFFF");
