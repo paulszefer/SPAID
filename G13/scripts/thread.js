@@ -1,7 +1,23 @@
-var threadlist = document.getElementsByClassName("rowthread");
-var threadcontentlist = document.getElementsByClassName("threadcontent");
+$(".rowthread").click(
+    function() {
+        var selected = ($(this).find(".threadcontent").css("display") == "block");
+        
+        $(".threadcontent").css("display", "none");
+        $(".threadauthor").css("display", "none");
+        
+        if (!selected) {
+            $(this).find(".threadcontent").css("display", "block");
+            $(this).find(".threadauthor").css("display", "block");
+            selected = !selected;
+        }
+    }
+)
 
-$(".rowthread").click(function() {
-    $(".threadcontent").css("display", "none");
-    $(this).find(".threadcontent").css("display", "block");
-})
+$(".rowthread").hover(
+    function() {
+        $(this).css("background-color", "#AAFFAA");
+    },
+    function() {
+        $(this).css("background-color", "#FFFFFF");
+    }
+)

@@ -137,6 +137,10 @@
     display: none;
 	margin: 10px 20px;
 }
+
+.threadauthor {
+    display: none;
+}
     
 #row1 {
     
