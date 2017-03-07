@@ -126,11 +126,13 @@
 
 .threadtitle {
     display: inline-block;
+	font-weight: bold;
 }
 
 .threadtimestamp {
     display: inline-block;
     float: right;
+	font-weight: bold;
 }
 
 .threadcontent {
@@ -140,6 +142,8 @@
 
 .threadauthor {
     display: none;
+	text-align: right;
+	font-style: italic;
 }
     
 #row1 {
