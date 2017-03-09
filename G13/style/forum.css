@@ -188,6 +188,7 @@
 
 .warning {
     display: none;
+    clear: both;
     color: red;
 }
 

@@ -57,31 +57,31 @@
                     <div id="registertab" class="accounttab">Register</div>
                     <div id="accountform">
                         <div id="loginform">
-                            <form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
+                            <form id="loginformelement" method="post"> <!--action="http://webdevfoundations.net/scripts/formdemo.asp"-->
                                 <div>
                                     <label for="loginusername">Username:</label>
                                     <input type="text" id="loginusername" name="loginusername" size="16">
-                                    <p id="loginusernamewarning" class="warning">Please enter a valid username</p>
+                                    <p id="loginusernamewarning" class="warning">Must be 1-32 alphanumeric characters</p>
                                 </div>
                                 <div>
                                     <label for="loginpassword">Password:</label>
                                     <input type="password" id="loginpassword" name="loginpassword" size="16">
-                                    <p id="loginpasswordwarning" class="warning">Please enter a valid password</p>
+                                    <p id="loginpasswordwarning" class="warning">Must be 8-32 alphanumeric characters</p>
                                 </div>
                                 <input type="submit" id="loginsubmit" value="Login">
                             </form>
                         </div>
                         <div id="registerform">
-                            <form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
+                            <form id="registerformelement" method="post">
                                 <div>
                                     <label for="registerusername">Username:</label>
                                     <input type="text" id="registerusername" name="registerusername" size="16">
-                                    <p id="registerusernamewarning" class="warning">Please enter a valid username</p>
+                                    <p id="registerusernamewarning" class="warning">Must be 1-32 alphanumeric characters</p>
                                 </div>
                                 <div>
                                     <label for="registerpassword">Password:</label>
                                     <input type="password" id="registerpassword" name="registerpassword" size="16">
-                                    <p id="registerpasswordwarning" class="warning">Please enter a valid username</p>
+                                    <p id="registerpasswordwarning" class="warning">Must be 8-32 alphanumeric characters</p>
                                 </div>
                                 <input type="submit" id="registersubmit" value="Register">
                             </form>
@@ -127,7 +127,7 @@
 				</div>
                 
                 <div id="postthreadform">
-                    <form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
+                    <form id="postthreadformelement" method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
                         <p>Post a thread</p>
                         <label for="postthreadtitle">Thread Title:</label>
                         <textarea id="postthreadtitle" name="postthreadtitle" rows="1" cols="50"></textarea>
@@ -141,7 +141,7 @@
                 </div>
                 
                 <div id="postreplyform">
-                    <form method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
+                    <form id="postreplyformelement" method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
                         <p>Post a reply</p>
                         <label for="postreplydescription">Reply:</label>
                         <textarea id="postreplydescription" name="postreplydescription" rows="6" cols="50"></textarea>
@@ -171,7 +171,7 @@
 		<script src="../scripts/navbar.js"></script>
         <script src="../scripts/account.js"></script>
         <script src="../scripts/thread.js"></script>
-        <script src="../scripts/validation.js"></script>
+        <script src="../scripts/validate.js"></script>
 		
 	</body>
 </html>
