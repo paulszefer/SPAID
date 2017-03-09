@@ -99,8 +99,11 @@
 	text-align: right;
 }
 
-#forumblock {
+#threadButton {
 	margin: 80px 0 0 0;
+}
+
+#forumblock {
 	width: 1116px;
 }
 
@@ -144,6 +147,10 @@
     display: none;
 	text-align: right;
 	font-style: italic;
+}
+
+.threadreply {
+	text-align: right;
 }
     
 #row1 {
