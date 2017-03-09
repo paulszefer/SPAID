@@ -122,6 +122,7 @@ p {
 	border: solid black;
 	border-width: 1px;
 	margin-bottom: 45px;
+	z-index: -1;
 }
 
 .nav {
