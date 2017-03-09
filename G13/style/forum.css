@@ -150,6 +150,7 @@
 }
 
 .threadreply {
+    display: none;
 	text-align: right;
 }
     

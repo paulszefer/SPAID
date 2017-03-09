@@ -4,11 +4,13 @@ $(".rowthread").click(
         
         $(".threadcontent").css("display", "none");
         $(".threadauthor").css("display", "none");
+        $(".threadreply").css("display", "none");
         
         if (!selected) {
             $(this).css("background-color", "#FFFFFF");
-            $(this).find(".threadcontent").css("display", "block");
             $(this).find(".threadauthor").css("display", "block");
+            $(this).find(".threadcontent").css("display", "block");
+            $(this).find(".threadreply").css("display", "block");
             selected = !selected;
         }
     }
