@@ -99,7 +99,7 @@
 	text-align: right;
 }
 
-#threadButton {
+#postthreadbutton {
 	margin: 80px 0 0 0;
 }
 
@@ -149,39 +149,35 @@
 	font-style: italic;
 }
 
-.threadreply {
+.threadreplybutton {
     display: none;
 	text-align: right;
 }
-    
-#row1 {
-    
-}
-	
-#row2 {
-    
+
+#postthreadform {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    background-color: #EEE7E1;
+    border: solid 1px black;
 }
 
-#row3 {
-    
-}
-
-#row4 {
-    
-}
-
-#row5 {
-    
-}
-	
-#row6 {
-    
-}
-
-#row7 {
-    
+#postreplyform {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    background-color: #EEE7E1;
+    border: solid 1px black;
 }
 
 input {
 	margin: 2px;
+}
+
+textarea {
+    resize: none;
 }
