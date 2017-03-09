@@ -151,7 +151,8 @@
 
 .threadreplybutton {
     display: none;
-	text-align: right;
+	position: relative;
+	left: 1021px;
 }
 
 #postthreadform {
