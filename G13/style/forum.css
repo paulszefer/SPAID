@@ -199,7 +199,8 @@
 }
 
 .warning {
-    display: ;
+    display: none;
+    clear: both;
     color: red;
 }
 

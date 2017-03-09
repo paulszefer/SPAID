@@ -53,13 +53,13 @@ $(".threadreplybutton").click(
 
 $("#submitthread").click(
     function() {
-        $("#postthreadform").css("display", "none");
+        
     }
 )
  
 $("#submitreply").click(
     function() {
-        $("#postreplyform").css("display", "none");
+        
     }
 )    
 
@@ -67,6 +67,7 @@ $(".cancel").click(
     function() {
         $("#postthreadform").css("display", "none");
         $("#postreplyform").css("display", "none");
+        $(".warning").css("display", "none");
     }
 )
 
