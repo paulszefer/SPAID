@@ -162,11 +162,19 @@ h4 {
 	left: 1021px;
 }
 
+#formwrapper {
+	position: fixed;
+	width: 1220px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 #postthreadform {
     display: none;
     position: fixed;
     bottom: 0;
-    left: 0;
+	left: 0;
     width: 500px;
     background-color: #EEE7E1;
     border: solid 1px black;
