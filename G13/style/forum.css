@@ -1,3 +1,8 @@
+h4 {
+	margin-top: 0;
+	padding-top: 0;
+}
+
 #forumhead {
 	display: inline-block
 }
@@ -165,28 +170,44 @@
     width: 500px;
     background-color: #EEE7E1;
     border: solid 1px black;
-	padding: 10px;
+	padding: 0 10px 10px 10px;
+}
+
+#titlelabel {
+	position: relative;
+	bottom: 5px;
+}
+
+#descriptionlabel {
+	position: relative;
+	bottom: 81px;
+}	
+
+#replylabel {
+	position: relative;
+	bottom: 81px;
+}
+
+#postthreadform {
+	text-align: right;
+}
+
+#postthreadform h4 {
+	text-align: left;
 }
 
 #postthreadform .cancel {
-	position: relative;
-	left: 350px;
 }
 
 #submitthread {
-	position: relative;
-	left: 350px;
 }
 
-#postreplyform .cancel {
-	position: relative;
-	left: 440px;
+#postreplyform {
+	text-align: right;
 }
 
-#submitreply {
-	position: relative;
-	top: 25px;
-	right: 63px;
+#postreplyform h4 {
+	text-align: left;
 }
 
 #postreplyform {
@@ -197,7 +218,7 @@
     width: 500px;
     background-color: #EEE7E1;
     border: solid 1px black;
-	padding: 10px;
+	padding: 0 10px 10px 10px;
 }
 
 .warning {
