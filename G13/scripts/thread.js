@@ -42,12 +42,30 @@ $("#postthreadbutton").click(
     }
 )
 
+$("#postthreadbutton").hover(
+    function() {
+        $(this).attr("src", "../images/postThreadHover.png")
+    },
+    function() {
+        $(this).attr("src", "../images/postThread.png")
+    }
+)
+
 $(".threadreplybutton").click(
     function() {
         var postthreadactive = isPostThreadActive();
         if (!postthreadactive) {
             $("#postreplyform").css("display", "block");
         }
+    }
+)
+
+$(".threadreplybutton").hover(
+    function() {
+        $(this).attr("src", "../images/postReplyHover.png")
+    },
+    function() {
+        $(this).attr("src", "../images/postReply.png")
     }
 )
 
