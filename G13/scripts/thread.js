@@ -39,6 +39,7 @@ $("#postthreadbutton").click(
         if (!postreplyactive) {
             $("#postthreadform").css("display", "block");
         }
+        $(".threadreplybutton").css("display", "none");
     }
 )
 
@@ -59,6 +60,7 @@ $(".threadreplybutton").click(
         if (!postthreadactive) {
             $("#postreplyform").css("display", "block");
         }
+        $(".threadreplybutton").css("display", "none");
     }
 )
 
@@ -87,6 +89,12 @@ $("#submitreply").click(
 
 $(".cancel").click(
     function() {
+        var rows = document.getElementsByClassName("row");
+        for (var i = 1; i < rows.length; i++) {
+            if (rows[i].children[3].style.display === "block") {
+                rows[i].children[4].firstChild.style.display = "block";
+            }
+        }
         $("#postthreadform").css("display", "none");
         $("#postreplyform").css("display", "none");
         $(".warning").css("display", "none");
