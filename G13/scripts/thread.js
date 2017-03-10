@@ -44,7 +44,9 @@ $("#postthreadbutton").click(
 
 $("#postthreadbutton").hover(
     function() {
-        $(this).attr("src", "../images/postThreadHover.png")
+        if (!isPostThreadActive() && !isPostReplyActive()) {
+            $(this).attr("src", "../images/postThreadHover.png")
+        }
     },
     function() {
         $(this).attr("src", "../images/postThread.png")
@@ -62,7 +64,9 @@ $(".threadreplybutton").click(
 
 $(".threadreplybutton").hover(
     function() {
-        $(this).attr("src", "../images/postReplyHover.png")
+        if (!isPostThreadActive() && !isPostReplyActive()) {
+            $(this).attr("src", "../images/postReplyHover.png")
+        }
     },
     function() {
         $(this).attr("src", "../images/postReply.png")
@@ -93,10 +97,10 @@ function hidePost(id) {
     $(id).css("display", "none");
 }
 
-function isPostReplyActive() {
-    return $("#postreplyform").css("display") == "block";
-}
-
 function isPostThreadActive() {
     return $("#postthreadform").css("display") == "block";
+}
+
+function isPostReplyActive() {
+    return $("#postreplyform").css("display") == "block";
 }
