@@ -94,8 +94,8 @@ $(".cancel").click(
     function() {
         var rows = document.getElementsByClassName("row");
         for (var i = 1; i < rows.length; i++) {
-            if (rows[i].children[3].style.display === "block") {
-                rows[i].children[4].firstChild.style.display = "block";
+            if (rows[i].getElementsByClassName("threadcontent")[0].style.display === "block") {
+                rows[i].getElementsByClassName("threadreplybutton")[0].style.display = "block";
             }
         }
         $("#postthreadform").css("display", "none");
