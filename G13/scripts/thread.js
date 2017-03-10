@@ -2,6 +2,7 @@ $(".rowthread").click(
     function() {
         var rowselected = ($(this).find(".threadcontent").css("display") == "block");
         var postreplyactive = isPostReplyActive();
+        var postthreadactive = isPostThreadActive();
             
         if (!postreplyactive) {
             $(".threadcontent").css("display", "none");
@@ -13,7 +14,9 @@ $(".rowthread").click(
             $(this).css("background-color", "#FFFFFF");
             $(this).find(".threadauthor").css("display", "block");
             $(this).find(".threadcontent").css("display", "block");
-            $(this).find(".threadreplybutton").css("display", "block");
+            if (!postthreadactive) {
+                $(this).find(".threadreplybutton").css("display", "block");
+            }
             rowselected = !rowselected;
         }
     }
