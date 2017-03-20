@@ -87,9 +87,10 @@ function validateTitle(str) {
     /* Condition 3: at most 32 characters */
     var c3 = (str.length <= 32);
     /* Condition 4: no invalid characters */
-    var c4 = !pattern.test(str);
+    // unused
+    // var c4 = !pattern.test(str);
     
-    var result = c1 && c2 && c3 && c4;
+    var result = c1 && c2 && c3;
     return result;
 }
 
@@ -104,8 +105,9 @@ function validateDescription(str) {
     /* Condition 3: at most 512 characters */
     var c3 = (str.length <= 512);
     /* Condition 4: no invalid characters */
-    var c4 = !pattern.test(str);
+    // unused
+    // var c4 = !pattern.test(str);
     
-    var result = c1 && c2 && c3 && c4;
+    var result = c1 && c2 && c3;
     return result;
 }
