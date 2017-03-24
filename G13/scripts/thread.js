@@ -28,7 +28,7 @@ $(".rowthread").hover(
         var postreplyactive = isPostReplyActive();
         
         if (!rowselected && !postreplyactive) {
-            $(this).css("background-color", "#AAFFAA");
+            $(this).css("background-color", "#E0EEEE");
         }
     },
     function() {
