@@ -1,7 +1,6 @@
 .termblock {
 	width: 230px;
 	background-color: #EEE7E1;
-	border: solid black;
 	padding: 20px;
 	display: inline-block;
 	vertical-align: top;
@@ -9,23 +8,19 @@
 }
     
 #termblock1 {
-	margin: 30px 0 0 30px;
-	border-width: 1px;
+	margin: 30px 22px 0 30px;
 }
 
 #termblock2 {
-	margin: 30px 0 0 0;
-	border-width: 1px 1px 1px 0;
+	margin: 30px 21px 0 0;
 }
 
 #termblock3 {
-	margin: 30px 0 0 0;
-	border-width: 1px 1px 1px 0;
+	margin: 30px 22px 0 0;
 }
 
 #termblock4 {
 	margin: 30px 30px 0 0;
-	border-width: 1px 1px 1px 0;
 }
 
 #maincontent {

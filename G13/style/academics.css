@@ -76,3 +76,18 @@ a:link, a:visited, a:hover, a:active {
 	text-align: left;
 	padding: 20px;
 }
+
+#dest1 {
+	position: relative;
+	bottom: 40px;
+}
+
+#dest2 {
+	position: relative;
+	bottom: 40px;
+}
+
+#dest3 {
+	position: relative;
+	bottom: 40px;
+}

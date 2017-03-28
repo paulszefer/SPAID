@@ -85,3 +85,8 @@
 #scrolllinks a:active {
 	color: #A2B6B8;
 }
+
+#maps, #studentassociation, #learningcommons, #softwareprograms, #wellness {
+	position: relative;
+	bottom: 40px;
+}

@@ -9,3 +9,9 @@
 #body img {
 	margin: 0 10px 0 10px;
 }
+
+#bar1, #bar2 {
+	border: solid black;
+	border-width: 1px 0 0 0;
+	padding-top: 20px;
+}
