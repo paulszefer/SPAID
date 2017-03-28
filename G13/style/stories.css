@@ -15,3 +15,11 @@
 	border-width: 1px 0 0 0;
 	padding-top: 20px;
 }
+
+#bar2 {
+	margin-top: 10px;
+}
+
+#alumni1, #alumni2, #alumni3, #alumni4, #alumni5, #story1, #story2, #story3, #story4, #story5 {
+	display: none;
+}
