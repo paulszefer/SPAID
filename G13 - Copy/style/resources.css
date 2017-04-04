@@ -1,0 +1,92 @@
+#maincontent {
+	width: 1116px;
+	background-color: #EEE7E1;
+	margin: 30px;
+	padding: 20px;
+	text-align: left;
+}
+
+#scrolllinks {
+	width: 1218px;
+	margin: auto;
+	margin-top: 30px;
+	padding: 0;
+	font-size: 1.3em;
+	font-family: headerfont, Calibri, Arial;
+}
+
+#scrolllink1 {
+	width: 216px;
+	margin-left: 29px;
+	margin-right: 5px;
+	display: inline-block;
+	background-color: #1C616F;
+	border: solid black;
+	border-width: 1px;
+}
+
+#scrolllink2 {
+	width: 217px;
+	margin-left: 5px;
+	margin-right: 5px;
+	display: inline-block;
+	background-color: #1C616F;
+	border: solid black;
+	border-width: 1px;
+}
+
+#scrolllink3 {
+	width: 217px;
+	margin-left: 5px;
+	margin-right: 5px;
+	display: inline-block;
+	background-color: #1C616F;
+	border: solid black;
+	border-width: 1px;
+}
+
+#scrolllink4 {
+	width: 217px;
+	margin-left: 5px;
+	margin-right: 5px;
+	display: inline-block;
+	background-color: #1C616F;
+	border: solid black;
+	border-width: 1px;
+}
+
+#scrolllink5 {
+	width: 217px;
+	margin-left: 5px;
+	margin-right: 31px;
+	display: inline-block;
+	background-color: #1C616F;
+	border: solid black;
+	border-width: 1px;
+}
+
+#scrolllinks a {
+	text-decoration: none;
+}
+
+#scrolllinks a:link {
+	color: white;
+}
+
+#scrolllinks a:visited {
+	color: white;
+}
+
+#scrolllinks a:hover {
+	color: #EEE7E1;
+}
+
+
+#scrolllinks a:active {
+	color: #A2B6B8;
+}
+
+#maps, #studentassociation, #learningcommons, #softwareprograms, #wellness {
+	position: relative;
+	bottom: 40px;
+}

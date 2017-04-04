@@ -1,0 +1,252 @@
+h4 {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+#forumhead {
+	display: inline-block
+}
+
+#loginhead {
+	display: inline-block;
+	float: right;
+}
+
+#account {
+    clear: both;
+    float: right;
+    border: solid 1px black;
+	background-color: #A2B6B8;
+    
+}
+
+#logintab {
+    border: solid black;
+    border-width: 0 0 0 1px;
+}
+
+#registertab {
+    border: solid black;
+    border-width: 0 0 0 0;
+}
+
+#accountform {
+    background-color: white;
+}
+
+#loginform {
+    display: none;	
+	background-color: white;
+	width: 280px;
+	text-align: right;
+	padding: 10px 0 2px 0;
+}
+
+#loginform label {
+	display: inline-block;
+	width: 90px;
+	padding-bottom: 6px;
+	text-align: right;
+}
+
+#loginform form {
+	padding-right: 5px;
+}
+
+#registerform {
+    display: none;
+	width: 280px;
+	background-color: white;
+	text-align: right;
+	padding: 10px 0 2px 0;
+}
+
+#registerform label {
+	display: inline-block;
+	width: 90px;
+	padding-bottom: 6px;
+	text-align: right;
+}
+
+#registerform form {
+	padding-right: 5px;
+}
+
+.accounttab {
+    width: 140px;
+    float: right;
+    text-align: center;
+    font-size: 1.1em;
+    display: inline-block;
+    user-select: none;
+}
+
+#accountform label {
+    float: left;
+}
+
+#accountform input {
+    float: right;
+}
+
+#loginsubmit, #registersubmit {
+    clear: both;
+    float: right;
+	margin-top: 2px;
+	margin-bottom: 0;
+}
+
+#maincontent {
+	width: 1116px;
+	background-color: #EEE7E1;
+	margin: 30px;
+	padding: 20px;
+	text-align: left;
+}
+
+#accountlogin {
+	text-align: right;
+}
+
+#postthreadbutton {
+	margin: 80px 0 0 0;
+}
+
+#forumblock {
+	width: 1116px;
+}
+
+.row {
+	margin: 0;
+	padding: 5px;
+	border: solid black;
+	border-width: 0 1px 1px 1px;
+}
+
+.rowtitle {
+	background-color: #A2B6B8;
+	border: solid black;
+	border-width: 1px 1px 1px 1px;
+	font-family: headerfont, Calibri, Arial;
+	font-size: 1.2em;
+}
+
+.rowthread {
+    background-color: white;
+    color: black;
+}
+
+.threadtitle {
+    display: inline-block;
+	font-weight: bold;
+}
+
+.threadtimestamp {
+    display: inline-block;
+    float: right;
+	font-weight: bold;
+}
+
+.threadcontent {
+    display: none;
+	margin: 10px 20px;
+}
+
+.threadauthor {
+    display: none;
+	text-align: right;
+	font-style: italic;
+}
+
+.threadreplybutton {
+    display: none;
+	position: relative;
+	left: 1021px;
+}
+
+@media only screen and (min-width: 1220px) {
+	#formwrapper {
+		position: fixed;
+		width: 1220px;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+#postthreadform {
+    display: none;
+    position: fixed;
+    bottom: 0;
+	left: 0;
+    width: 500px;
+    background-color: #EEE7E1;
+    border: solid 1px black;
+	padding: 0 10px 10px 10px;
+}
+
+#titlelabel {
+	position: relative;
+	bottom: 5px;
+}
+
+#descriptionlabel {
+	position: relative;
+	bottom: 81px;
+}	
+
+#replylabel {
+	position: relative;
+	bottom: 81px;
+}
+
+#postthreadform {
+	text-align: right;
+}
+
+#postthreadform h4 {
+	text-align: left;
+}
+
+#postthreadform .cancel {
+}
+
+#submitthread {
+}
+
+#postreplyform {
+	text-align: right;
+}
+
+#postreplyform h4 {
+	text-align: left;
+}
+
+#postreplyform {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    background-color: #EEE7E1;
+    border: solid 1px black;
+	padding: 0 10px 10px 10px;
+}
+
+.warning {
+	display: none;
+	clear: both;
+    color: red;
+}
+
+#account .warning {
+	padding-right: 5px;
+}
+
+input {
+	margin: 2px;
+}
+
+textarea {
+    resize: none;
+}
