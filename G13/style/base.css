@@ -208,3 +208,7 @@ a.sitemaplink:active {
 	font-family: 'headerfont';
 	src: url('ITC Avant Garde Gothic Book Regular.otf');
 }
+
+.hidden { 
+    display: none;
+}
