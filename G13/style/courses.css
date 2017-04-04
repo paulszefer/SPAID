@@ -6,7 +6,27 @@
 	vertical-align: top;
 	height: 320px;
 }
-    
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: #1C616F;
+}
+
+a:active {
+	color: white;
+}
+
 #termblock1 {
 	margin: 30px 22px 0 30px;
 }

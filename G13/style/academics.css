@@ -48,8 +48,20 @@ a {
 	text-decoration: none;
 }
 
-a:link, a:visited, a:hover, a:active {
-    color: blue;
+a:link {
+    color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: #1C616F;
+}
+
+a:active {
+	color: white;
 }
 
 #scrolllinks a:link {

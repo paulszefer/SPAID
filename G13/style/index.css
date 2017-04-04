@@ -1,6 +1,30 @@
-#body img {
+#maincontent img {
 	float: right;
 	margin-left: 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: #1C616F;
+}
+
+a:active {
+	color: white;
+}
+
+#calendar img {
+	margin-left: 14px;
 }
 
 #slider {
