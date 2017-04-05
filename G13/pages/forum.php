@@ -72,11 +72,9 @@
                             echo '<h2>Welcome ' . ($row['firstname'] == '' ? $row['login'] : $row['firstname']) . '</h2>';
                             echo '<p><a href="logout.php">Logout</a></p>';
                         } else {
+							echo 'Not Logged In';
+                        }
                     ?>
-					<h2>Not Logged In</h2>
-					<?php
-						}
-					?>
 				</div>
                 
                 <?php
