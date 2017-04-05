@@ -158,10 +158,14 @@ h4 {
 	font-style: italic;
 }
 
-.threadreplybutton {
+.postreplybutton {
     display: none;
 	position: relative;
 	left: 1021px;
+}
+
+.rowreply {
+    display: none;
 }
 
 @media only screen and (min-width: 1220px) {

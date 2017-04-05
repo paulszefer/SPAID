@@ -7,7 +7,8 @@ $(".rowthread").click(
         if (!postreplyactive) {
             $(".threadcontent").css("display", "none");
             $(".threadauthor").css("display", "none");
-            $(".threadreplybutton").css("display", "none");
+            $(".postreplybutton").css("display", "none");
+            $(".rowreply").css("display", "none");
         }
         
         if (!(rowselected || postreplyactive)) {
@@ -15,8 +16,9 @@ $(".rowthread").click(
             $(this).find(".threadauthor").css("display", "block");
             $(this).find(".threadcontent").css("display", "block");
             if (!postthreadactive) {
-                $(this).find(".threadreplybutton").css("display", "block");
+                $(this).find(".postreplybutton").css("display", "block");
             }
+            $(this).find(".rowreply").css("display", "block");
             rowselected = !rowselected;
         }
     }
@@ -42,7 +44,7 @@ $("#postthreadbutton").click(
         if (!postreplyactive) {
             $("#postthreadform").css("display", "block");
         }
-        $(".threadreplybutton").css("display", "none");
+        $(".postreplybutton").css("display", "none");
     }
 )
 
@@ -57,17 +59,18 @@ $("#postthreadbutton").hover(
     }
 )
 
-$(".threadreplybutton").click(
+$(".postreplybutton").click(
     function() {
         var postthreadactive = isPostThreadActive();
         if (!postthreadactive) {
             $("#postreplyform").css("display", "block");
+            document.getElementById("threadidreply").value = this.parentElement.parentElement.children[0].innerHTML;
         }
-        $(".threadreplybutton").css("display", "none");
+        $(".postreplybutton").css("display", "none");
     }
 )
 
-$(".threadreplybutton").hover(
+$(".postreplybutton").hover(
     function() {
         if (!isPostThreadActive() && !isPostReplyActive()) {
             $(this).attr("src", "../images/postReplyHover.png")
@@ -92,10 +95,10 @@ $("#submitreply").click(
 
 $(".cancel").click(
     function() {
-        var rows = document.getElementsByClassName("row");
-        for (var i = 1; i < rows.length; i++) {
+        var rows = document.getElementsByClassName("rowthread");
+        for (var i = 0; i < rows.length; i++) {
             if (rows[i].getElementsByClassName("threadcontent")[0].style.display === "block") {
-                rows[i].getElementsByClassName("threadreplybutton")[0].style.display = "block";
+                rows[i].getElementsByClassName("postreplybutton")[0].style.display = "block";
             }
         }
         $("#postthreadform").css("display", "none");

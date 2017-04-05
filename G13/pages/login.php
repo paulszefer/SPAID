@@ -37,7 +37,7 @@
 	$password = clean($_REQUEST['loginpassword']);
 	
 	//Create query
-	$qry="SELECT * FROM members WHERE login='$login' AND passwd='".md5($_REQUEST['password'])."'";
+	$qry="SELECT * FROM members WHERE login='$login' AND passwd='".md5($_REQUEST['loginpassword'])."'";
 	$result=mysqli_query($GLOBALS["___mysqli_ston"], $qry);
 	
 	//Check whether the query was successful or not
@@ -54,6 +54,8 @@
 			exit();
 		}else {
 			//Login failed
+			$errmsg_arr[] = 'Incorrect username or password';
+			$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
 			header("location: forum.php");
 			exit();
 		}

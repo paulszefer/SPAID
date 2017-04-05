@@ -36,6 +36,16 @@
 	$login = clean($_POST['registerusername']);
 	$password = clean($_POST['registerpassword']);
 	
+	//Input Validations
+    if($login == '') {
+		$errmsg_arr[] = 'Login ID missing';
+		$errflag = true;
+	}
+	if($password == '') {
+		$errmsg_arr[] = 'Password missing';
+		$errflag = true;
+	}
+	
 	//Check for duplicate login ID
 	if($login != '') {
 		$qry = "SELECT * FROM members WHERE login='$login'";
@@ -51,9 +61,17 @@
 			die("Query failed");
 		}
 	}
+	
+	//If there are input validations, redirect back to the registration form
+	if($errflag) {
+		$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
+		session_write_close();
+		header("location: forum.php");
+		exit();
+	}
 
 	//Create INSERT query
-	$qry = "INSERT INTO members(firstname, lastname, login, passwd) VALUES('$fname','$lname','$login','".md5($_POST['password'])."')";
+	$qry = "INSERT INTO members(firstname, lastname, login, passwd) VALUES('$fname','$lname','$login','".md5($_POST['registerpassword'])."')";
 	$result = @mysqli_query($GLOBALS["___mysqli_ston"], $qry);
 	
 	//Check whether the query was successful or not

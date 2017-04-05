@@ -6,11 +6,9 @@
 	// Connect to server and select database.
 	($GLOBALS["___mysqli_ston"] = mysqli_connect(DB_HOST,  DB_USER,  DB_PASSWORD))or die("cannot connect");
 	((bool)mysqli_query($GLOBALS["___mysqli_ston"], "USE " . constant('DB_DATABASE')))or die("cannot select DB");
-	$tbl_name="topic"; // Table name
-
-
-	$sql="SELECT * FROM $tbl_name ORDER BY id DESC";
-	// ORDER BY id DESC is order result by descending
+	
+    $tbl_name="topic"; // Table name
+	$sql="SELECT * FROM $tbl_name JOIN members ON members.member_id = topic.member_id ORDER BY id DESC";
 	$result=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
 ?>
 <!doctype html>
@@ -67,16 +65,19 @@
                     <?php
                         if (isLoggedIn()){
                             $ID = $_SESSION['SESS_MEMBER_ID'];
-                            $tbl_name_members = "members"; // change table name
-                            $sql = "SELECT * FROM $tbl_name_members WHERE member_id='$ID'";
-                            $result = mysql_query($sql);
-                            $row = mysql_fetch_array($result);
-                            echo '<h2>Welcome ' . $row['firstname'] . '</h2>';
+                            $tbl_name = "members"; // change table name
+                            $sql = "SELECT * FROM $tbl_name WHERE member_id='$ID'";
+                            $result2=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
+                            $row = mysqli_fetch_array($result2);
+                            echo '<h2>Welcome ' . ($row['firstname'] == '' ? $row['login'] : $row['firstname']) . '</h2>';
                             echo '<p><a href="logout.php">Logout</a></p>';
                         }
                     ?>
 				</div>
                 
+                <?php
+                    if (!isLoggedIn()){
+                ?>
                 <div id="account">
                     <div id="logintab" class="accounttab">Login</div>
                     <div id="registertab" class="accounttab">Register</div>
@@ -113,9 +114,28 @@
                         </div>
                     </div>
                 </div>
-				
+                <?php
+                    if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
+                        echo '<ul class="err">';
+                        foreach($_SESSION['ERRMSG_ARR'] as $msg) {
+                            echo '<li>',$msg,'</li>'; 
+                        }
+                        echo '</ul>';
+                        unset($_SESSION['ERRMSG_ARR']);
+                    }
+                ?>
+                <?php
+                    }
+                ?>
+                
+                <?php
+                    if (isLoggedIn()){
+                ?>
 				<div><img id="postthreadbutton" src="../images/postThread.png" alt="Post Thread" width="137" height=40"></div>
-				
+				<?php
+                    }
+                ?>
+                
                 <div id="forumblock">
 					<div class="row rowtitle">
 						Forum
@@ -127,12 +147,57 @@
                     ?>
                     
 					<div class="row rowthread">
-                        <div class="hidden"><?php echo $rows['id']; ?></div>
+                        <div class="hidden threadidstorage"><?php echo $rows['id']; ?></div>
                         <div class="threadtitle"><?php echo $rows['topic']; ?></div>
                         <div class="threadtimestamp"><?php echo $rows['datetime']; ?></div>
-                        <div class="threadauthor"><?php echo $rows['firstname'] . ' ' . $rows['lastname']; ?></div>
-                        <div class="threadcontent"> This is an interesting thread. It has a lot of content. This is an interesting thread. It has a lot of content. This is an interesting thread. It has a lot of content. This is an interesting thread. It has a lot of content. This is an interesting thread. It has a lot of content. This is an interesting thread. It has a lot of content. This is an interesting thread. It has a lot of content.</div>
-						<div><img class="threadreplybutton" src="../images/postReply.png" alt="Post Reply" width="82" height="40"></div>
+                        <div class="threadauthor"><?php 
+                                if ($rows['firstname'] == '' || $rows['lastname'] == '') {
+                                    echo $rows['login'];
+                                } else {
+                                    echo $rows['firstname'] . ' ' . $rows['lastname'];
+                                }
+                            ?></div>
+                        <div class="threadcontent"><?php echo $rows['detail']; ?></div>
+						<?php
+                            if (isLoggedIn()){
+                        ?>
+                        <div><img class="postreplybutton" src="../images/postReply.png" alt="Post Reply" width="82" height="40"></div>
+                        <?php
+                            }
+                        ?>
+
+                        <?php
+                                
+                            $tbl_name="response";
+                            $id=$rows['id'];
+                            $sql="SELECT * FROM $tbl_name WHERE topic_id='$id'";
+                            $result3=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
+                            
+                            while ($rows2=mysqli_fetch_array($result3)) {
+                                
+                                $tbl_name="members";
+                                $member_id=$rows2['member_id'];
+                                $sql="SELECT * FROM $tbl_name WHERE member_id='$member_id'";
+                                $result4=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
+                                $rows3=mysqli_fetch_array($result4);
+                        ?>
+                        
+                        <div class="row rowreply">
+                            <div class="replytimestamp"><?php echo $rows2['datetime']; ?></div>
+                            <div class="replyauthor"><?php 
+                                if ($rows3['firstname'] == '' || $rows3['lastname'] == '') {
+                                    echo $rows3['login'];
+                                } else {
+                                    echo $rows3['firstname'] . ' ' . $rows3['lastname'];
+                                }
+                            ?></div>
+                            <div class="replycontent"><?php echo $rows2['response']; ?></div>
+                        </div>
+
+                        <?php
+                            }
+                        ?>
+                
                     </div>
 
                     <?php
@@ -144,7 +209,7 @@
                 
 				<div id="formwrapper">
 					<div id="postthreadform">
-						<form id="postthreadformelement" method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
+						<form id="postthreadformelement" method="post" action="add_topic.php">
 							<p><h4>Post a thread</h4></p>
 							<label id="titlelabel" for="postthreadtitle">Thread Title:</label>
 							<textarea id="postthreadtitle" name="postthreadtitle" rows="1" cols="55"></textarea>
@@ -158,10 +223,11 @@
 					</div>
                 
 					<div id="postreplyform">
-						<form id="postreplyformelement" method="post" action="http://webdevfoundations.net/scripts/formdemo.asp">
+						<form id="postreplyformelement" method="post" action="add_response.php">
+                            <input type="hidden" id="threadidreply" name="id">
 							<p><h4>Post a reply</h4></p>
 							<label id="replylabel" for="postreplydescription">Reply:</label>
-							<textarea id="postreplydescription" name="postreplydescription" rows="6" cols="55"></textarea>
+							<textarea id="postreplydescription" name="response" rows="6" cols="55"></textarea>
 							<p id="postreplydescriptionwarning" class="warning">Must be 1-512 characters</p>
 							<input type="submit" id="submitreply" value="Post reply">
 							<input type="button" class="cancel" value="Cancel">
