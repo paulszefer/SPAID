@@ -101,6 +101,16 @@ h4 {
 	margin-bottom: 0;
 }
 
+.err {
+	float: right;
+	font-size: 1.3em;
+	color: red;
+}
+
+.err li {
+	list-style-type: none;
+}
+
 #maincontent {
 	width: 1116px;
 	background-color: #EEE7E1;
