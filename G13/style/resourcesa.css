@@ -419,3 +419,17 @@ th, td {
         width: 100%;
     }
 }
+
+/* Ian's temp(?) footer fix */
+#footer {
+	position: relative;
+	top: 122px;
+	right: 1px;
+}
+
+/* Ian's too */
+#footer p {
+	font-size: 1em;
+	color: black;
+	margin: 0 14px 15px 0;
+}
