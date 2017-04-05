@@ -71,6 +71,8 @@
                             $row = mysqli_fetch_array($result2);
                             echo '<h2>Welcome ' . ($row['firstname'] == '' ? $row['login'] : $row['firstname']) . '</h2>';
                             echo '<p><a href="logout.php">Logout</a></p>';
+                        } else {
+                            echo 'Not Logged In';
                         }
                     ?>
 				</div>
