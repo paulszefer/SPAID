@@ -57,10 +57,21 @@
 		
 		<div id="body">
 			<div id="maincontent">
+			<?php
+				if (isLoggedIn()) {
+			?>
 				<div id="forumhead">
 					<h1>Forum</h1>
 				</div>
-				
+			<?php
+				} else {
+			?>
+				<div id="forumhead2">
+					<h1>Forum</h1>
+				</div>
+			<?php
+				}
+			?>
 				<div id="loginhead">
                     <?php
                         if (isLoggedIn()){
@@ -72,7 +83,7 @@
                             echo '<h2>Welcome ' . ($row['firstname'] == '' ? $row['login'] : $row['firstname']) . '</h2>';
                             echo '<p><a href="logout.php">Logout</a></p>';
                         } else {
-							echo 'Not Logged In';
+							echo '<h2>Not Logged In</h2>';
                         }
                     ?>
 				</div>
