@@ -178,7 +178,7 @@
                         <?php
                             }
                         ?>
-
+						<div class="replywrapper">
                         <?php
                                 
                             $tbl_name="response";
@@ -210,7 +210,7 @@
                         <?php
                             }
                         ?>
-                
+						</div>
                     </div>
 
                     <?php

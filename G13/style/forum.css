@@ -105,6 +105,7 @@ h4 {
 	float: right;
 	font-size: 1.3em;
 	color: red;
+	margin-right: 5px;
 }
 
 .err li {
@@ -149,6 +150,11 @@ h4 {
 .rowthread {
     background-color: white;
     color: black;
+}
+
+.replywrapper {
+	border: solid black;
+	border-width: 1px 0 0 0;
 }
 
 .threadtitle {
