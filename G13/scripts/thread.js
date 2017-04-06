@@ -8,7 +8,7 @@ $(".rowthread").click(
             $(".threadcontent").css("display", "none");
             $(".threadauthor").css("display", "none");
             $(".postreplybutton").css("display", "none");
-            $(".rowreply").css("display", "none");
+            $(".replywrapper").css("display", "none");
         }
         
         if (!(rowselected || postreplyactive)) {
@@ -18,7 +18,10 @@ $(".rowthread").click(
             if (!postthreadactive) {
                 $(this).find(".postreplybutton").css("display", "block");
             }
-            $(this).find(".rowreply").css("display", "block");
+            
+            if ($(this).find($(".replywrapper")).children().length != 0) {
+                $(this).find(".replywrapper").css("display", "block");
+            }
             rowselected = !rowselected;
         }
     }
