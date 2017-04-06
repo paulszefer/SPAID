@@ -17,6 +17,22 @@ h4 {
 	float: right;
 }
 
+a:link {
+    color: black;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: #1C616F;
+}
+
+a:active {
+	color: white;
+}
+
 #account {
     clear: both;
     float: right;
@@ -156,6 +172,7 @@ h4 {
     display: none;
 	border: solid black;
 	border-width: 1px 0 0 0;
+	margin-top: 5px;
 }
 
 .threadtitle {
@@ -184,6 +201,14 @@ h4 {
     display: none;
 	position: relative;
 	left: 1021px;
+}
+
+.replytimestamp {
+	font-weight: bold;
+}
+
+.replyauthor {
+	font-style: italic;
 }
 
 @media only screen and (min-width: 1220px) {
