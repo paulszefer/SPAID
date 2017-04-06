@@ -117,6 +117,10 @@ a:active {
 	margin-bottom: 0;
 }
 
+#logoutbutton {
+	margin-left: 70px;
+}
+
 .err {
 	float: right;
 	font-size: 1.3em;
