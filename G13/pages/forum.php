@@ -81,7 +81,7 @@
                             $result2=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
                             $row = mysqli_fetch_array($result2);
                             echo '<h2>Welcome ' . ($row['firstname'] == '' ? $row['login'] : $row['firstname']) . '</h2>';
-                            echo '<p><a href="logout.php">Logout</a></p>';
+                            echo '<div><a href="logout.php"><img id="logoutbutton" src="../images/logout.png" alt="Logout" width="95" height="40"></a></div>';
                         } else {
 							echo '<h2>Not Logged In</h2>';
                         }

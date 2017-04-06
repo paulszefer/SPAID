@@ -41,6 +41,17 @@ $(".rowthread").hover(
     }
 )
 
+$("#logoutbutton").hover(
+    function() {
+        if (!isPostThreadActive() && !isPostReplyActive()) {
+            $(this).attr("src", "../images/logoutHover.png")
+        }
+    },
+    function() {
+        $(this).attr("src", "../images/logout.png")
+    }
+)
+
 $("#postthreadbutton").click(
     function() {
         var postreplyactive = isPostReplyActive();
