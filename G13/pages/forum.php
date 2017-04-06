@@ -183,25 +183,25 @@
                                 
                             $tbl_name="response";
                             $id=$rows['id'];
-                            $sql="SELECT * FROM $tbl_name WHERE topic_id='$id'";
+                            $sql="SELECT * FROM $tbl_name JOIN members ON members.member_id = response.member_id WHERE topic_id='$id'";
                             $result3=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
                             
                             while ($rows2=mysqli_fetch_array($result3)) {
                                 
-                                $tbl_name="members";
-                                $member_id=$rows2['member_id'];
-                                $sql="SELECT * FROM $tbl_name WHERE member_id='$member_id'";
-                                $result4=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
-                                $rows3=mysqli_fetch_array($result4);
+                                // $tbl_name="members";
+                                // $member_id=$rows2['member_id'];
+                                // $sql="SELECT * FROM $tbl_name WHERE member_id='$member_id'";
+                                // $result4=mysqli_query($GLOBALS["___mysqli_ston"], $sql);
+                                // $rows3=mysqli_fetch_array($result4);
                         ?>
                         
                         <div class="row rowreply">
                             <div class="replytimestamp"><?php echo $rows2['datetime']; ?></div>
                             <div class="replyauthor"><?php 
-                                if ($rows3['firstname'] == '' || $rows3['lastname'] == '') {
-                                    echo $rows3['login'];
+                                if ($rows2['firstname'] == '' || $rows2['lastname'] == '') {
+                                    echo $rows2['login'];
                                 } else {
-                                    echo $rows3['firstname'] . ' ' . $rows3['lastname'];
+                                    echo $rows2['firstname'] . ' ' . $rows2['lastname'];
                                 }
                             ?></div>
                             <div class="replycontent"><?php echo $rows2['response']; ?></div>
