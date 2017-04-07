@@ -209,10 +209,14 @@ a:active {
 
 .replytimestamp {
 	font-weight: bold;
+	float:right;
+    display: block;
 }
 
 .replyauthor {
 	font-style: italic;
+	text-align: right;
+	display: block;
 }
 
 @media only screen and (min-width: 1220px) {

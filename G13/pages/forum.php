@@ -196,7 +196,7 @@
                         ?>
                         
                         <div class="row rowreply">
-                            <div class="replytimestamp"><?php echo $rows2['datetime']; ?></div>
+                            <div class="replytimestamp"><?php echo $rows2['datetime']; ?></div><br>
                             <div class="replyauthor"><?php 
                                 if ($rows2['firstname'] == '' || $rows2['lastname'] == '') {
                                     echo $rows2['login'];
