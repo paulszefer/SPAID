@@ -10,7 +10,7 @@ html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acro
 body {	
     font-family: Calibri, Arial, sans-serif;
     width: 100%;
-    background-color: #194587;
+    background-color: #1C616F;
 }
 
 h2, h1, h3{
@@ -34,7 +34,7 @@ p {
 	width: 100%;
 	height: 40px;
 	top: 0;
-	background-color: #194587; /* 1C616F */
+	background-color: #1C616F; /* 194587 */
 	border: solid black;
 	border-width: 0 0 1px 0;
 }
@@ -44,7 +44,7 @@ p {
 	width: 1218px;
 	height: 30px;
 	text-align: right;
-	background-color: #194587;
+	background-color: #1C616F;
 	margin-top: 5px;
 	left: 50%;
 	transform: translateX(-50%);
@@ -69,7 +69,7 @@ p {
 
 .navcollapsed {
     display: none;
-    background-color: #194587;
+    background-color: #1C616F;
     width: 150px;
     padding-top: 6px;
     padding-bottom: 5px;
@@ -192,7 +192,7 @@ a.sitemaplink:visited {
 }	
 
 a.sitemaplink:hover {
-	color: #194587;
+	color: #1C616F;
 }
 
 a.sitemaplink:active {
