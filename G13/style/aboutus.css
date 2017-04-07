@@ -6,6 +6,11 @@
 	text-align: left;
 }
 
+#maincontent div {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
 img {
 	float: left;
 	margin-right: 10px;
