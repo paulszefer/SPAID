@@ -366,6 +366,7 @@ table, tr, td {
     margin: 0;
     vertical-align: top;
     padding-left: 30px;
+    font-size: small;
 }
 
 .newstext a:visited {

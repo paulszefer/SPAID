@@ -11,6 +11,10 @@
     height: 100%;
 }
 
+#cst {
+    padding-bottom: 60px;
+}
+
 #programinfo {
 margin-top: 40px;
 }
@@ -32,7 +36,7 @@ margin-top: 40px;
 }
 
 #cstheaders {
-    margin-top: 60px;
+    margin-top: 0;
 }
 
 #termtable {
