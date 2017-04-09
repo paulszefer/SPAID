@@ -1,0 +1,516 @@
+#body {
+    width: 90%;
+    margin: auto;
+}
+
+h2 {
+    padding-left: 14px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+figure {
+    font-size: x-small;
+    color: blue;
+}
+
+p {
+    padding-left: 14px;
+    margin: 0;
+    color: #1C616F;
+    font-size: small;
+}
+
+#resintro {
+    overflow: hidden;
+}
+
+#address {
+    color: blue;
+}
+
+#metrobcit a, #metrobcit a:visited, #metrobcit a:hover {
+    color: blue;
+}
+
+#brentbcit a, #brentbcit a:visited, #brentbcit a:hover {
+    color: blue;
+}
+
+.btt {
+    text-align: right;
+    font-size: small;
+    padding: 5px;
+}
+
+.btt a, a:visited, a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+#resintro {
+    width: 100%;
+}
+
+#mapsheader {
+    border-top: solid 3px orange;
+    border-bottom: solid 3px orange;
+    overflow: hidden;
+}
+
+#saheader {
+    border-top: solid 3px orange;
+    border-bottom: solid 3px orange;
+    overflow: hidden;
+}
+
+#lcheader {
+    border-top: solid 3px orange;
+    border-bottom: solid 3px orange;
+    overflow: hidden;
+}
+
+#spheader {
+    border-top: solid 3px orange;
+    border-bottom: solid 3px orange;
+    overflow: hidden;
+}
+
+#wellheader {
+    border-top: solid 3px orange;
+    border-bottom: solid 3px orange;
+    overflow: hidden;
+}
+
+
+#mapsc {
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+#studentac {
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+#learningcc {
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+#softc {
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+#wellc {
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+#mapic {
+    padding: 14px;
+    overflow: hidden;
+}
+
+#studentac {
+    overflow: hidden;
+}
+
+#studentacmain {
+    overflow: hidden;
+    max-height: 100%;
+    padding-left: 14px;
+    padding-top: 24px;
+    padding-bottom: 14px;
+}
+
+#studentacmain img {
+    width: 100%;
+    height: 100%;
+    border: solid 1px black;
+}
+
+.mapimage {
+    text-decoration: none;
+}
+
+#lcmaintable {
+    margin-top: 28px;
+}
+
+#softwrapper {
+    overflow: hidden;
+    width: 100%;
+    padding: 14px;
+    
+}
+
+.softcwrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.softcleftwrap {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.softcrightwrap {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.softclefttop {
+    float: top;
+    width: 100%;
+    height: 30%;
+    margin-top: 14px;
+}
+
+.softcleftbot {
+    float: bottom;
+    width: 100%;
+    height: 70%;
+}
+
+#fzhost {
+    color: blue;
+}
+
+#welllist {
+    margin-left: 14px;
+    padding-left: 14px;
+    list-style-type: disc;
+    font-size: smaller;
+}
+
+.wellli, .wellli a, .wellli a:visited {
+    text-decoration: none;
+}
+
+.wellli a:hover {
+    text-decoration: underline;
+}
+
+#wellpic {
+    margin-top: 28px;
+}
+
+/* Table */
+
+table {
+    padding-left: 14px;
+    width: 50%;
+}
+
+th {
+    font-weight: bold;
+}
+
+td {
+    font-size: smaller;
+    color: blue;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.bnum {
+    color: blue;
+}
+
+.tmod {
+    font-weight: bold;
+}
+
+.tdmod {
+    font-size: x-small;
+    color: black;
+}
+
+.bleft {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 1EM;
+}
+
+.tyellow {
+    background-color: yellow;
+    width: 20%;
+}
+
+.torange {
+    background-color: darkorange;
+    width: 20%;
+}
+
+.tgrey {
+    background-color: darkgrey;
+    width: 20%;
+}
+
+#lctable {
+    width: 80%;
+}
+
+#softtable {
+    margin: 0;
+    padding: 0;
+}
+
+.lctdl {
+    width: 40%;
+    color: black;
+    overflow: hidden;
+}
+
+.lctdl1 {
+    width: 40%;
+    color: black;
+    overflow: hidden;
+    background-image: url("../../images/peert.jpg");
+}
+
+.lctdl2 {
+    width: 40%;
+    color: black;
+    overflow: hidden;
+    background-image: url("../../images/writ.jpg");
+}
+
+.lctdl3 {
+    width: 40%;
+    color: black;
+    overflow: hidden;
+    background-image: url("../../images/learnt.jpg");
+}
+
+.lctdl4 {
+    width: 40%;
+    color: black;
+    overflow: hidden;
+    background-image: url("../../images/applyt.jpg");
+}
+
+.lctdr1 {
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #00004d;
+    color: white;
+    text-decoration: none;
+}
+
+.lctdr1 a, .lctdr1 a:visited, .lctdr1 a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.lctdr a, .lctdr a:visited, .lctdr a:hover {
+    color: red;
+}
+
+.trright {
+    width: 100%;
+}
+
+.tdnobord {
+    font-weight: bold;
+}
+
+.tdnobord1 {
+    color: black;
+}
+
+.tdnobord0 a, .tdnobord0 a:visited, .tdnobord0 a:hover {
+    text-decoration: none;
+}
+
+
+/* Pop Up Image */
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 80px;
+    right: 230px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+#acaheaders {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    border-top: solid 2px darkorange;
+    border-bottom: solid 2px darkorange;
+}
+
+#acaheaders img {
+    width: 100%;
+    height: 100%;
+}
+
+#acaheaders1 {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    border-top: solid 2px darkorange;
+    border-bottom: solid 2px darkorange;
+}
+
+#acaheaders1 img {
+    width: 100%;
+    height: 100%;
+}
+
+#acaheaders2 {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    border-top: solid 2px darkorange;
+    border-bottom: solid 2px darkorange;
+}
+
+#acaheaders2 img {
+    width: 100%;
+    height: 100%;
+}
+
+#acaheaders3 {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    border-top: solid 2px darkorange;
+    border-bottom: solid 2px darkorange;
+}
+
+#acaheaders3 img {
+    width: 100%;
+    height: 100%;
+}
+
+#acaheaders4 {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    border-top: solid 2px darkorange;
+    border-bottom: solid 2px darkorange;
+}
+
+#acaheaders4 img {
+    width: 100%;
+    height: 100%;
+}
+
+#submenu {
+    border-top: solid 2px darkorange;
+    height: 70px;
+    width: 100%;
+    background-color: white;
+}
+
+#subnav {
+    padding: 25px 25px;
+    text-align: center;
+}
+
+#subnav a, #subnav a:visited {
+    display: inline;
+    text-decoration: none;
+    padding: 0px 50px;
+    color: #00004d;
+    font-weight: bold;
+}
+
+#subnav a:hover {
+    color: blue;
+}

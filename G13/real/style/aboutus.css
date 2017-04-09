@@ -1,0 +1,48 @@
+.profilepic {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    float: left;
+}
+
+.profilebio {
+    float: left;
+    height: 150px;
+    width: 900px;
+}
+
+#steph {
+    overflow: auto;
+}
+
+#paul {
+    overflow: auto;
+}
+
+#austin {
+    overflow: auto;
+}
+
+#ian {
+    overflow: auto;
+}
+
+#devan {
+    overflow: auto;
+}
+
+
+.biop {
+    font-size: small;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.h2bio {
+}
+
+.h2bio img {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
