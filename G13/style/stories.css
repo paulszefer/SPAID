@@ -36,8 +36,12 @@
 }
 
 /* Table CSS */
+table {
+    border-collapse: collapse;
+}
 
 tr, td, th {
+    padding: 5px;
 	border: solid 1px black;
 }
 
@@ -68,18 +72,6 @@ tr, td, th {
 	color: blue;
 }
 
-#jeshao {
-	margin-bottom: 20px;
-}
-
-#ralyt {
-	margin-bottom: 20px;
-}
-
-#female1 {
-	margin-bottom: 20px;
-}
-
-#male1 {
-	margin-bottom: 20px;
+.interviewsection {
+    margin-bottom: 20px;
 }
