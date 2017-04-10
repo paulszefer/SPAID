@@ -329,9 +329,13 @@ th, td {
     text-decoration: none;
 }
 
-.lctdr1 a, .lctdr1 a:visited, .lctdr1 a:hover {
+.lctdr1 a, .lctdr1 a:visited {
     text-decoration: none;
     color: white;
+}
+
+.lctdr1 a:hover {
+    color: beige;
 }
 
 .lctdr a, .lctdr a:visited, .lctdr a:hover {
@@ -350,8 +354,12 @@ th, td {
     color: black;
 }
 
-.tdnobord0 a, .tdnobord0 a:visited, .tdnobord0 a:hover {
+.tdnobord0 a, .tdnobord0 a:visited {
     text-decoration: none;
+}
+
+.tdnobord0 a:hover {
+    color: #1C616F;
 }
 
 
