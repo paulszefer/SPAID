@@ -5,15 +5,15 @@ h2 {
 }
 
 figure {
-    font-size: x-small;
+    font-size: 1em;
     color: blue;
 }
 
 p {
     padding-left: 14px;
     margin: 0;
-    color: #1C616F;
-    font-size: small;
+    color: black;
+    font-size: 1em;
 }
 
 #resintro {
@@ -34,7 +34,7 @@ p {
 
 .btt {
     text-align: right;
-    font-size: x-small;
+    font-size: 1em;
     padding: 5px;
 }
 
@@ -183,7 +183,7 @@ p {
     margin-left: 14px;
     padding-left: 14px;
     list-style-type: disc;
-    font-size: smaller;
+    font-size: 1em;
 }
 
 .wellli, .wellli a, .wellli a:visited {
@@ -210,7 +210,7 @@ th {
 }
 
 td {
-    font-size: smaller;
+    font-size: 1em;
     color: blue;
 }
 
@@ -228,7 +228,7 @@ th, td {
 }
 
 .tdmod {
-    font-size: x-small;
+    font-size: 1em;
     color: black;
 }
 
@@ -237,7 +237,7 @@ th, td {
     padding: 0px;
     margin: 0px;
     font-weight: bold;
-    font-size: 1EM;
+    font-size: 1em;
 }
 
 .tyellow {
@@ -265,34 +265,35 @@ th, td {
 }
 
 .lctdl {
-    width: 40%;
+    width: 33%;
     color: black;
     overflow: hidden;
 }
 
 .lctdl1 {
-    width: 40%;
+    width: 33%;
     color: black;
     overflow: hidden;
     background-image: url("../images/peert.png");
+    background-repeat: no-repeat;
 }
 
 .lctdl2 {
-    width: 40%;
+    width: 33%;
     color: black;
     overflow: hidden;
     background-image: url("../images/writ.png");
 }
 
 .lctdl3 {
-    width: 40%;
+    width: 33%;
     color: black;
     overflow: hidden;
     background-image: url("../images/learnt.png");
 }
 
 .lctdl4 {
-    width: 40%;
+    width: 33%;
     color: black;
     overflow: hidden;
     background-image: url("../images/applyt.png");

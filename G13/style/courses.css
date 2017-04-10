@@ -12,11 +12,11 @@ a {
 }
 
 a:link {
-    color: black;
+    color: blue;
 }
 
 a:visited {
-	color: black;
+	color: blue;
 }
 
 a:hover {
@@ -53,11 +53,17 @@ a:active {
 
 table {
     width: inherit;
-    border-spacing: 10px;
+    border-spacing: 0;
 }
 
 th {
+    padding: 0 5px;
     text-decoration: underline;
+    font-size: 1.2em;
+}
+
+td {
+    padding: 5px;
 }
 
 .leftcol {
@@ -66,4 +72,8 @@ th {
 
 .rightcol {
     text-align: right;
+}
+
+.coursedescription {
+    display: none;
 }
