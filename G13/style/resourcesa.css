@@ -16,6 +16,12 @@ p {
     font-size: 1em;
 }
 
+.h2res {
+    color: #1C616F;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
 #resintro {
     overflow: hidden;
 }
@@ -90,6 +96,10 @@ p {
     overflow: hidden;
 }
 
+#studentacintro {
+    width: 70%;
+}
+
 #learningcc {
     width: 100%;
     margin-bottom: 30px;
@@ -126,12 +136,16 @@ p {
 }
 
 #studentacmain img {
-    width: 95%;
+
     border: solid 1px black;
 }
 
 .mapimage {
     text-decoration: none;
+}
+
+#lcmain {
+    width: 70%;
 }
 
 #lcmaintable {
@@ -192,6 +206,10 @@ p {
 
 .wellli a:hover {
     text-decoration: underline;
+}
+
+#wellintro {
+    width: 70%;
 }
 
 #wellpic {
@@ -259,6 +277,10 @@ th, td {
     width: 80%;
 }
 
+#softintro {
+    width: 70%;
+}
+
 #softtable {
     margin: 0;
     padding: 0;
@@ -274,7 +296,7 @@ th, td {
     width: 33%;
     color: black;
     overflow: hidden;
-    background-image: url("../images/peert.png");
+    background-image: url("../images/peert.jpg");
     background-repeat: no-repeat;
 }
 
@@ -282,21 +304,21 @@ th, td {
     width: 33%;
     color: black;
     overflow: hidden;
-    background-image: url("../images/writ.png");
+    background-image: url("../images/writ.jpg");
 }
 
 .lctdl3 {
     width: 33%;
     color: black;
     overflow: hidden;
-    background-image: url("../images/learnt.png");
+    background-image: url("../images/learnt.jpg");
 }
 
 .lctdl4 {
     width: 33%;
     color: black;
     overflow: hidden;
-    background-image: url("../images/applyt.png");
+    background-image: url("../images/applyt.jpg");
 }
 
 .lctdr1 {
@@ -434,3 +456,85 @@ th, td {
 	color: black;
 	margin: 0 14px 15px 0;
 }
+
+
+
+
+
+
+/* Footer */
+/*
+#footer {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    color: white;
+}
+
+#footertop {
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#footerbot {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer1 {
+    height: 100%;
+    width: 15%;
+    float: left;
+}
+
+.footer2 {
+    padding-top: 40px;
+    height: 100%;
+    width: 14%;
+    float: left;
+    font-weight: bold;
+}
+
+.footer2 a, .footer2 a:visited {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+#footerbot {
+    color: lightgrey;
+}
+
+.footerbottomcontent {
+    color: darkgrey;
+    margin-top: 20px;
+}
+
+.footerbottomcontent a, .footerbottomcontent a:visited {
+    color: darkgray;
+    text-decoration: none;
+    display: block;
+    font-size: .8em;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 7px;
+}
+
+.footerbottomcontent a:hover {
+    color: white;
+}
+
+#footersm {
+    margin-top: 20px;
+}
+
+#footersm img {
+    height: 20px;
+    width: 20px;
+}
+
+#footersm a, #footersm a:visited, #footersm a:hover {
+    text-decoration: none;
+    display: inline;
+}
+*/
